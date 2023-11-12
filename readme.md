@@ -1,0 +1,2 @@
+# Joomla Plugins for SP Page Builder created by Web Palace
+Download the package and install in your joomla 4 project. After installing package please activate this plugin in manager of plugins in the admin panel.

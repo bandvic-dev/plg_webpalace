@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="5.0" type="plugin" group="sppagebuilder" method="upgrade">
+	<name>WebPalace Addon Plugins - SP Page Builder</name>
+	<author>WebPalace</author>
+	<creationDate>22 Sep 2023</creationDate>
+	<authorEmail>admin(at)webpalace.ru</authorEmail>
+	<authorUrl>https://www.webpalace.ru</authorUrl>
+	<copyright>Copyright (C) 2010 - 2023 WebPalace. All rights reserved.</copyright>
+	<license>GNU/GPL V2 or Later</license>
+	<description>WebPalace addon plugins for SP Page Builder</description>
+	<version>1.0</version>
+
+	<files>
+		<filename plugin="webpalace">webpalace.php</filename>
+		<folder>addons</folder>
+	</files>
+
+</extension>
