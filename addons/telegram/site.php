@@ -20,10 +20,8 @@ class SppagebuilderAddonTelegram extends SppagebuilderAddons {
     }
 
     public function generateImageUrl($token = null) {
-        define('CURRENT_DIR', __DIR__);
-
         $path = '$path';
-        $filename = CURRENT_DIR . '/image.php';
+        $filename = __DIR__ . '/image.php';
         
         $php_code = '<?php $path = isset($_GET["path"]) ? $_GET["path"] : false;';
         $php_code .= 'if ($path) {';
@@ -61,6 +59,7 @@ class SppagebuilderAddonTelegram extends SppagebuilderAddons {
                 return ($post->channel_post->chat->username == $GLOBALS['channel_username']);
             }
         }) : [];
+        
         arsort($posts);
 
         $i = 1;
@@ -163,4 +162,3 @@ class SppagebuilderAddonTelegram extends SppagebuilderAddons {
 // Выбор вариантов иконок для $bottom_desc
 // Обединить шаблоны текстовых сообщений с постами из видео и фото
 // Выставлять качество изображений постов
-// пересмотреть функционал проксирования картинок
